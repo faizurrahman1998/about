@@ -1,0 +1,105 @@
+body {
+    background-image: url("cover18.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.msg {
+    color: aqua;
+    position: relative;
+    text-align: center;
+    margin-top: 500px;
+    border: 2px solid steelblue;
+    border-radius: 70px;
+}
+h1 {
+    font-size: 80;
+    letter-spacing: 1em;
+    padding-left: 55px; 
+    color: crimson;
+}
+
+p {
+    font-size: 40;
+    font-family: "Courier";
+    letter-spacing: .2em;
+    color: crimson;
+}
+
+h3 {
+    font-size: 35;
+    font-weight: 50;
+    color: springgreen;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    letter-spacing: .3em;
+    word-spacing: 1.2em;
+    text-transform: uppercase;
+    -webkit-font-smoothing:antialiased;
+
+
+}
+
+nav {
+    position: relative;
+    margin: 20px auto 0; 
+    width: 510px;
+    height: 50px;
+    background-color: lightcoral;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 0;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .1);
+}
+
+nav a{
+    font-size: 25;
+    text-transform: uppercase;
+    color: white; 
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+
+}
+
+nav .animation {
+    position: absolute;
+    height: 5px;
+    bottom: 0; 
+    left: -2px;
+    z-index: 0;
+    background: springgreen;
+    width: 4px; 
+    border-radius: 100px;
+    transition: all 0.3s ease-in-out 0s;
+
+}
+
+a:nth-child(1) {
+    width: 160px;
+}
+
+nav .start-home,a:nth-child(1):hover~.animation {
+    width: 50px; 
+    left: 60px; 
+}
+
+a:nth-child(2) {
+    width: 170px; 
+}
+
+nav .start-projects,a:nth-child(2):hover~.animation {
+    width: 60px; 
+    left: 220px; 
+}
+
+a:nth-child(3) {
+    width: 170px; 
+}
+
+nav .start-contact,a:nth-child(3):hover~.animation {
+    width: 60px; 
+    left: 390px; 
+}
